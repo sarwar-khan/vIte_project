@@ -1,11 +1,14 @@
 {
+  "homepage":"https://sarwar-khan.github.com/vIte_project",
   "name": "virtualr",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "build": "react-scripts build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
